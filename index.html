@@ -10,7 +10,12 @@
 :root{
     --bg:#0d1117;
     --card:#161b22;
-    --neon:#00ffcc;
+    /* =========================================
+       SỬA ĐOẠN NÀY: Thay đổi từ màu xanh ngả lá sang Neon Light Blue (#00f0ff)
+       Màu mới này sẽ tự động áp dụng cho tất cả các hiệu ứng đổ bóng (glowing) trong bài.
+       =========================================
+    */
+    --neon:#00f0ff;
     --gold:#ffd700;
     --text:#e6edf3;
 }
@@ -30,7 +35,6 @@ body{
     justify-content:center;
     align-items:center;
     overflow-x:hidden;
-    /* CẬP NHẬT: Thêm padding để khi hiển thị trên mobile không bị dính sát mép màn hình */
     padding: 20px; 
 }
 
@@ -67,7 +71,6 @@ body::after{
 }
 
 .card{
-    /* CẬP NHẬT: Thay đổi width thành 100% và max-width thành 700px để giao diện tự co giãn trên mobile */
     width: 100%;
     max-width: 700px;
     background:var(--card);
@@ -101,7 +104,6 @@ body::after{
     box-shadow:
     0 0 20px var(--neon),
     0 0 40px var(--neon);
-    /* CẬP NHẬT: Thêm object-fit để ảnh không bị méo nếu tỉ lệ ảnh gốc không phải 1:1 */
     object-fit: cover; 
 }
 
@@ -244,23 +246,22 @@ SKILLS BADGES
 }
 
 /* =========================================
-THÊM MỚI: MEDIA QUERY CHO THIẾT BỊ DI ĐỘNG
-Tối ưu hóa hiển thị khi quét mã QR bằng điện thoại
+MEDIA QUERY CHO THIẾT BỊ DI ĐỘNG
 =========================================
 */
 @media (max-width: 480px) {
     body {
         padding: 10px;
-        align-items: flex-start; /* Tránh việc card bị đẩy lên quá sát camera ẩn của một số dòng máy */
+        align-items: flex-start;
     }
     .card {
-        padding: 20px; /* Giảm padding bên trong card để tăng không gian chứa chữ */
+        padding: 20px;
     }
     .tagline {
-        font-size: 12px; /* Giảm size chữ dòng Tagline để không bị tràn màn hình khi chạy hiệu ứng gõ chữ */
+        font-size: 12px;
     }
     .social a {
-        padding: 8px 12px; /* Thu nhỏ các nút social một chút để dễ bấm phân bổ đều */
+        padding: 8px 12px;
         font-size: 14px;
     }
 }
@@ -294,8 +295,8 @@ Tối ưu hóa hiển thị khi quét mã QR bằng điện thoại
         <h2>CONTACT</h2>
 
         <ul class="contact">
-            <li>📞 +84 xxx xxx xxx</li>
-            <li>📧 yourmail@gmail.com</li>
+            <li>📞 +84 352 615 894</li>
+            <li>📧 phamhoangkha14012020@gmail.com</li>
             <li>📍 Can Tho, Vietnam</li>
         </ul>
     </div>
@@ -304,10 +305,10 @@ Tối ưu hóa hiển thị khi quét mã QR bằng điện thoại
         <h2>SOCIAL</h2>
 
         <div class="social">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Instagram</a>
+            <a href="https://github.com/trainsr-hub" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/hoàng-kha-phạm-a28144413?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/train.river.3/" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/channel/UCsMniNV3iOuT4_Oy4CUp2qQ" target="_blank">Youtube</a>
         </div>
     </div>
 
